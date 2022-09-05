@@ -17,6 +17,12 @@ describe FizzBuzz do
       expect(fizzbuzz.evaluate(15)).to eq "fizzbuzz"
       expect(fizzbuzz.evaluate(45)).to eq "fizzbuzz"
     end
+
+    it "それ以外はそのまま文字列にしたものを返すこと" do
+      fizzbuzz = FizzBuzz.new
+      expect(fizzbuzz.evaluate(1)).to eq "1"
+      expect(fizzbuzz.evaluate(11)).to eq "11"
+    end
   end
 end
 
